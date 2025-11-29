@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${josefinSans.variable} mx-auto max-w-360 ${alata.variable} antialiased`}>
+      <body suppressHydrationWarning className={`${josefinSans.variable} mx-auto max-w-360 ${alata.variable} antialiased`}>
         {children}
       </body>
     </html>

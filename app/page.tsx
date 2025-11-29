@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import InteractiveVR from "@/components/InteractiveVR";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
         <Header />
         <Hero />
       </section>
+      <InteractiveVR />
     </main>
   );
 }
