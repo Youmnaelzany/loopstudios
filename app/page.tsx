@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import InteractiveVR from "@/components/InteractiveVR";
@@ -12,6 +13,7 @@ export default function Home() {
       </section>
       <InteractiveVR />
       <OurCreations />
+      <Footer />
     </main>
   );
 }

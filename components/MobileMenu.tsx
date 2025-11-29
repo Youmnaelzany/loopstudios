@@ -1,15 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
+
 import { Menu } from "lucide-react";
+
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-  SheetClose,
 } from "@/components/ui/sheet";
+
 import { NAV_LINKS } from "./Header";
 
 const MobileMenu = () => {
@@ -17,7 +20,7 @@ const MobileMenu = () => {
     <div className="lg:hidden">
       <Sheet>
         <SheetTrigger>
-          <Menu className="size-7 text-white"/>
+          <Menu className="size-7 text-white" />
         </SheetTrigger>
         <SheetContent className="bg-black px-7 py-12">
           <SheetHeader>

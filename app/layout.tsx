@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { Alata, Josefin_Sans } from "next/font/google";
+
 import "./globals.css";
 
 const josefinSans = Josefin_Sans({
   variable: "--font-josefin-sans",
   subsets: ["latin"],
-  weight: ["300","400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
   style: ["normal", "italic"],
   display: "swap",
 });
@@ -29,7 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning className={`${josefinSans.variable} mx-auto max-w-360 ${alata.variable} antialiased`}>
+      <body
+        suppressHydrationWarning
+        className={`${josefinSans.variable} mx-auto max-w-360 ${alata.variable} antialiased`}
+      >
         {children}
       </body>
     </html>

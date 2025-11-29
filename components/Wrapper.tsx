@@ -1,4 +1,5 @@
 import { ComponentPropsWithoutRef, ElementType } from "react";
+
 import { cn } from "@/lib/utils";
 
 type WrapperProps<T extends ElementType> = {
@@ -16,7 +17,7 @@ const Wrapper = <T extends ElementType = "div">({
   const Component = Tag as ElementType;
 
   return (
-    <Component className={cn("mx-auto max-w-360 px-7 md:px-10 lg:px-16", className)} {...props}>
+    <Component className={cn("mx-auto max-w-360 px-6 md:px-10 lg:px-20", className)} {...props}>
       {children}
     </Component>
   );

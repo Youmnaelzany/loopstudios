@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import Wrapper from "./Wrapper";
+
 import MobileMenu from "./MobileMenu";
+import Wrapper from "./Wrapper";
 
 export const NAV_LINKS = ["About", "Careers", "Events", "Products", "Support"];
 
@@ -27,7 +28,7 @@ const Header = () => {
             <li key={link}>
               <Link
                 href="/"
-                className="font-alata text-[0.9375rem] leading-[165%] font-normal tracking-normal text-white"
+                className="font-alata text-[0.9375rem] leading-[165%] font-normal tracking-normal text-white decoration-2 underline-offset-8 hover:underline hover:decoration-[#364bec]"
               >
                 {link}
               </Link>
